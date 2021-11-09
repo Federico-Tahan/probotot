@@ -50,11 +50,11 @@ async def on_message(message):
                                    "https://predator-game.com/")
     elif userMessage == prefix + "help":
         embed_help = discord.Embed(title="🧾**COMANDOS**",
-                                       description="!web\n"
-                                                    "!roi\n"
-                                                    "!download\n"
-                                                    "!redes\n"
-                                                    "!contract",
+                                       description="!web >>> Muestra la página oficial de Predator\n"
+                                                    "!roi >>> Muestra un video explicativo del ROI\n"
+                                                    "!download >>> Muestra la página oficial de  descarga de Predator\n"
+                                                    "!redes >>> Muestra las redes oficiales de Predator\n"
+                                                    "!contract >>> Muestra los contratos de Predator",
                                        timestamp=datetime.datetime.utcnow())
         await message.channel.send(embed = embed_help)
 
