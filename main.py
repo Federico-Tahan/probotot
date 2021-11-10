@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 from PIL import Image, ImageChops, ImageDraw, ImageFont
 
 load_dotenv()
-TOKEN = "OTA1MjA4MDA5NDkwMzE3Mzky.YYGupw.tEM1RA3cccCNvLrd7JsAmoZewWI"
+TOKEN = "OTA3MzAzNjAwMTM5Njc3Nzgw.YYlOUw.n6YYL1TRL3UNWao_fe9Ekakb8IA"
 
 client = commands.Bot(command_prefix="!", help_command=None, intents=discord.Intents().all())
 
