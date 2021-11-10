@@ -97,7 +97,7 @@ async def on_member_join(member):
     draw.text((365, 330), name, font=font, fill="white")
     draw.text((300, 380), relleno, font=font, fill="white")
     card.save("profile.png")
-    await client.get_channel(905249285061357598).send(file=discord.File("profile.png"))
+    await client.get_channel(888133258490040381).send(file=discord.File("profile.png"))
     
 
 client.run(TOKEN)
