@@ -92,7 +92,7 @@ async def on_member_join(member):
 
     draw = ImageDraw.Draw(card)
     name = str(f"Bienvenido, {member.display_name}")
-    relleno = "Dirigete a #language-idioma"
+    relleno = "Dirigete a #Pick-Your-Language"
     font = ImageFont.truetype("Montserrat-MediumItalic.ttf", 30)
     draw.text((365, 330), name, font=font, fill="white")
     draw.text((300, 380), relleno, font=font, fill="white")
