@@ -94,8 +94,8 @@ async def on_member_join(member):
     name = str(f"Bienvenido, {member.display_name}!")
     relleno = "Te uniste a la comunidad de predator!"
     font = ImageFont.truetype("Montserrat-MediumItalic.ttf", 30)
-    draw.text((365, 330), name, font=font, fill="white")
-    draw.text((262, 380), relleno, font=font, fill="white")
+    draw.text((375, 330), name, font=font, fill="white")
+    draw.text((255, 380), relleno, font=font, fill="white")
     card.save("profile.png")
     await client.get_channel(888133258490040381).send(file=discord.File("profile.png"))
     await client.get_channel(888133258490040381).send("Ve al canal **#pick-your-lenguage** para seleccionar tu idioma!\n\n"
