@@ -85,7 +85,8 @@ async def help(ctx):
                                            "!roi >>> Muestra un video explicativo del ROI\n"
                                            "!download >>> Muestra la página oficial de descarga de Predator\n"
                                            "!redes >>> Muestra las redes oficiales de Predator\n"
-                                           "!contract >>> Muestra los contratos de Predator",
+                                           "!contract >>> Muestra los contratos de Predator\n"
+                                           "!bug>>> Muestra el formulario para reportar los bugs!",
                                timestamp=datetime.datetime.utcnow())
     await ctx.send(embed=embed_help)
 
