@@ -68,6 +68,16 @@ async def web(ctx):
                    "https://predator-game.com/")
 
 
+@client.command()
+async def bug(ctx):
+    embed_bug = discord.Embed(title="🧾**¿HAS REPORTADO UN BUG Y SE PIERDE ENTRE MENSAJES?**",
+                                   description="— Hemos creado un formulario de reporte de bugs SOBRE EL JUEGO.\n\n"
+                                               "Si has encontrado uno, por favor, utiliza este enlace para hacerlo saber y solucionarlo.\n\n"
+                                               ":pushpin: https://forms.gle/z3bFXWyTPBYBuutX6",
+                                   timestamp=datetime.datetime.utcnow())
+    await ctx.send(embed=embed_bug)
+
+
 @client.command(name="help")
 async def help(ctx):
     embed_help = discord.Embed(title="🧾**COMANDOS**",
