@@ -39,6 +39,35 @@ async def contract(ctx):
 
 
 @client.command()
+async def alerta(ctx):
+    embed_alerta = discord.Embed(title="    :rotating_light:**¡CUIDADO CON LAS ESTAFAS!**:rotating_light: ",
+                               description="-Los canales OFICIALES en inglés y español son \n"
+                                           "Ingles https://t.me/PREDATORANNOUNCEMENT\n"
+                                           "Español https://t.me/PredatorNoticias\n\n"
+                                           "Tengan cuidado con los enlaces maliciosos de canales y grupos FALSOS.\n\n"
+                                           ":warning:Pedimos por favor, el reporte por ESTAFA a este canal\n"
+                                           "https://t.me/predator_pro_en",
+                               timestamp=datetime.datetime.utcnow())
+    await ctx.send(file=discord.File(advertencia))
+    await ctx.send(embed=embed_alerta)
+
+
+@client.command()
+async def alert(ctx):
+    embed_alerta = discord.Embed(title="    :rotating_light:**BEWARE OF SCAMS!**:rotating_light: ",
+                               description="-The OFFICIAL channel in English and Spanish is \n"
+                                           "English https://t.me/PREDATORANNOUNCEMENT\n"
+                                           "Spanish https://t.me/PredatorNoticias\n\n"
+                                           "Beware of malicious links from FAKE channels and groups.\n\n"
+                                           ":warning:We ask you to please report as SCAM this channel\n"
+                                           "https://t.me/predator_pro_en",
+                               timestamp=datetime.datetime.utcnow())
+    await ctx.send(file=discord.File(advertencia))
+    await ctx.send(embed=embed_alerta)
+
+
+
+@client.command()
 async def redes(ctx):
     embed_redes = discord.Embed(title="**REDES SOCIALES**",
                                 description="Twitter : https://twitter.com/predatorprogame?s=21\n"
