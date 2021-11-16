@@ -7,7 +7,6 @@ from PIL import Image, ImageChops, ImageDraw, ImageFont
 
 load_dotenv()
 TOKEN = "OTA3MzAzNjAwMTM5Njc3Nzgw.YYlOUw.n6YYL1TRL3UNWao_fe9Ekakb8IA"
-advertencia= "mensajeadvertencia.jpg"
 
 client = commands.Bot(command_prefix="!", help_command=None, intents=discord.Intents().all())
 
@@ -37,35 +36,6 @@ async def contract(ctx):
                                                ":pushpin: NFTs: https://bscscan.com/token/0x9e3a158a357a6403aad454f501d69e86b04a2174",
                                    timestamp=datetime.datetime.utcnow())
     await ctx.send(embed=embed_contract)
-
-
-@client.command()
-async def alerta(ctx):
-    embed_alerta = discord.Embed(title="    :rotating_light:**¡CUIDADO CON LAS ESTAFAS!**:rotating_light: ",
-                               description="-Los canales OFICIALES en inglés y español son \n"
-                                           "Ingles https://t.me/PREDATORANNOUNCEMENT\n"
-                                           "Español https://t.me/PredatorNoticias\n\n"
-                                           "Tengan cuidado con los enlaces maliciosos de canales y grupos FALSOS.\n\n"
-                                           ":warning:Pedimos por favor, el reporte por ESTAFA a este canal\n"
-                                           "https://t.me/predator_pro_en",
-                               timestamp=datetime.datetime.utcnow())
-    await ctx.send(file=discord.File(advertencia))
-    await ctx.send(embed=embed_alerta)
-
-
-@client.command()
-async def alert(ctx):
-    embed_alerta = discord.Embed(title="    :rotating_light:**BEWARE OF SCAMS!**:rotating_light: ",
-                               description="-The OFFICIAL channel in English and Spanish is \n"
-                                           "English https://t.me/PREDATORANNOUNCEMENT\n"
-                                           "Spanish https://t.me/PredatorNoticias\n\n"
-                                           "Beware of malicious links from FAKE channels and groups.\n\n"
-                                           ":warning:We ask you to please report as SCAM this channel\n"
-                                           "https://t.me/predator_pro_en",
-                               timestamp=datetime.datetime.utcnow())
-    await ctx.send(file=discord.File(advertencia))
-    await ctx.send(embed=embed_alerta)
-
 
 
 @client.command()
