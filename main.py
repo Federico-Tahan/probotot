@@ -112,5 +112,54 @@ async def on_member_join(member):
     await client.get_channel(888133258490040381).send("Ve al canal **#pick-your-lenguage** para seleccionar tu idioma!\n\n"
                                                       "Go to **#pick-your-lenguage** to select a language!")
     
+    
+    @client.command()
+async def faq(ctx):
+    embed_faq = discord.Embed(title="   PREDATOR GAME ($PRO)\n  :warning:FAQ — Preguntas Frecuentes ",
+                               description=":arrow_forward:¿QUE NECESITO PARA COMENZAR A JUGAR?\n  "
+                                           "R: Necesitas un NFT y al menos 50 $PRO para hacer las misiones diarias.\n \n "
+                                           ":arrow_forward:¿DONDE PUEDO REGISTRARME?\n"
+                                           "R: https://predator-game.com/market/#/auth/register\n\n"
+                                           ":arrow_forward:¿CUÁNTO VALEN LOS NFTs?\n"
+                                           "R: Están disponibles desde los 0.14 BNB a 1.1 BNB, también eventualmente hay cápsulas por minteo, con un valor de US$100 en $PRO (Cantidad definida por el Oráculo).\n\n"
+                                           ":arrow_forward:¿COMO ACCEDO AL MARKET?\n"
+                                           "R: https://predator-game.com/market/#/\n\n"
+                                           ":arrow_forward:¿DE CUÁNTO TIEMPO ES EL ROI?\n"
+                                           "R: Se estiman unos 30 a 45 días dependiendo de tu inversión inicial.\n\n"
+                                           ":arrow_forward:¿CUÁNTO SE GANARÁ EN EL JUEGO?\n"
+                                           "R: Las ganancias están entre 4 a 15 dólares diarios, variando según cuantos $PRO deposites dentro del juego y de tu desempeño y nivel a la hora de completar misiones.Puedes ganar más, pero tendrás que apostar y arriesgar a perder más dinero. También puedes ganar dinero con el farming, cada 7, 14 o 30 días según los stats de tu NFT.\n\n"
+                                           ":arrow_forward:¿HAY FARMING?\n"
+                                           "R: Sí, el apartado de farming se encuentra en nuestra web.\n\n"
+                                           ":arrow_forward:¿HABRÁ STAKING?\n"
+                                           "R: Sí, se está desarrollando un sistema de staking que beneficia a los top holders.\n\n"
+                                           ":arrow_forward:¿PODRÉ COMPRAR NFTs CON PRO?\n"
+                                           "R: Actualmente puedes comprar NFT en PRO usando el sistema de cápsulas.\n\n"
+                                           ":arrow_forward:¿PARA QUÉ SE USARÁ EL PRO?\n"
+                                           "R: Para compra de NFT, powerups (por partida), armas, objetos de un solo uso, apuestas, torneos, staking, farming.\n\n"
+                                           ":arrow_forward:¿PARA QUE SE UTILIZARA EL TOR?\n"
+                                           "R: Para compra de NFT, skins únicos, power ups (de tiempo), apuestas. Se recibirán recompensas en TOR.\n"
+                                           ":arrow_forward:¿HAY UN SISTEMA DE ORÁCULO?\n"
+                                           "R: Si hay un sistema económico basado en oráculo.\n\n"
+                                           ":arrow_forward:¿COMO TRANSFORMO MIS PRO A PS (Pro silver)?\n"
+                                           "R: Debes apretar en el botón 'swap' dentro del juego e intercambiarlo. Recuerda que 1 $PRO=1000 PS.\n\n "
+                                           ":arrow_forward:¿QUE ES $TOR?\n"
+                                           "R: $TOR sera nuestro token secundario, que se usará principalmente para pagar las recompensas dentro del juego.\n\n"
+                                           ":arrow_forward:¿VAMOS A RETIRAR EN $TOR O EN $PRO?\n"
+                                           "R: Puedes retirar los dos simultáneamente sin ningún problema.\n\n"
+                                           ":arrow_forward:¿QUE PASARA CON EL TOKEN $PRO?\n"
+                                           "R: $PRO será nuestro token de gobernanza, es decir, de inversión y gasto.\n\n"
+                                           ":arrow_forward:¿EL RETIRO DE MIS TOKENS SERA SOLO UNA VEZ POR MES?\n"
+                                           "R: No. Puedes retirar cuando lo desees eligiendo tu tiempo y comision de retiro.\n\n"
+                                           ":arrow_forward:¿HAY SISTEMA DE BECAS?\n"
+                                           "R: Si. El sistema de becas se encuentra en etapa de desarrollo.\n\n"
+                                           ":arrow_forward:¿EL MODO ESPECTADOR YA ESTA HABILITADO?\n"
+                                           "R: El modo espectador se encuentra en testeos internos.\n\n"
+                                           ":arrow_forward:¿CUANDO ES LA PREVENTA DEL TOKEN $TOR?\n"
+                                           "R: La fecha de la preventa sera anunciada en los próximos dias.\n\n"
+                                           ":arrow_forward:¿DONDE PUEDO ENCONTRAR EL WHITEPAPER?\n"
+                                           "R: Puedes encontrarlo en nuestra web o siguiendo el siguiente link: https://docs.predator-game.com/welcome-to-predator/introduction",
+                               timestamp=datetime.datetime.utcnow())
+    await ctx.send(embed=embed_faq)
+    
 
 client.run(TOKEN)
