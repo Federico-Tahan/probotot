@@ -113,6 +113,7 @@ async def on_member_join(member):
                                                       "Go to **#pick-your-lenguage** to select a language!")
     
     
+    
 @client.command()
 async def faq(ctx):
     embed_faq = discord.Embed(title="   PREDATOR GAME ($PRO)\n  :warning:FAQ — Preguntas Frecuentes ",
@@ -160,6 +161,5 @@ async def faq(ctx):
                                            "R: Puedes encontrarlo en nuestra web o siguiendo el siguiente link: https://docs.predator-game.com/welcome-to-predator/introduction",
                                timestamp=datetime.datetime.utcnow())
     await ctx.send(embed=embed_faq)
-    
 
 client.run(TOKEN)
