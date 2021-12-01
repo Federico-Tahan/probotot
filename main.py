@@ -88,7 +88,8 @@ async def help(ctx):
                                            "!contract >>> Muestra los contratos de Predator\n"
                                            "!bug>>> Muestra el formulario para reportar los bugs!\n"
                                            "!faq>>> Muestra las preguntas más frecuentes!\n"
-                                           "!pro >>> Muestra el precio del token\n",
+                                           "!pro >>> Muestra el precio del token\n"
+                                           "!whitepaper >>> Muestra los Whitepapers en Español e Ingles",
                                timestamp=datetime.datetime.utcnow())
     await ctx.send(embed=embed_help)
 
