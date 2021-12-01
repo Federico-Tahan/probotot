@@ -92,6 +92,19 @@ async def help(ctx):
                                timestamp=datetime.datetime.utcnow())
     await ctx.send(embed=embed_help)
 
+    
+@client.command()
+async def whitepaper(ctx):
+    embed_whitepaper = discord.Embed(title=":map: WHITEPAPER Y ROADMAP ACTUALIZADO :map:",
+                               description="— Luego de semanas preparando todo y algunos últimos ajustes, ya fue hecho público el nuevo whitepaper y el roadmap actualizado del proyecto.\n\n"
+                                           ":warning: Los enlaces al whitepaper en inglés y español son los siguientes:\n\n"
+                                           ":flag_us: WHITEPAPER EN INGLÉS : https://docs.predator-game.com/welcome-to-predator/introduction\n"
+                                           ":flag_es: WHITEPAPER EN ESPAÑOL: https://spdocs.predator-game.com/bienvenido-a-predator/master\n\n"
+                                           "El roadmap nuevo lo pueden ver en la web o en el whitepaper.\n\n"
+                                           ":rotating_light:Se debe mencionar que el documento tendrá cambios a futuro: más información que no haya sido añadida aún o futuras implementaciones no mencionadas.\n"
+                                           "Buen juego para todos :heart:",
+                               timestamp=datetime.datetime.utcnow())
+    await ctx.send(embed=embed_whitepaper)
 
 @client.event
 async def on_member_join(member):
