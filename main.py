@@ -80,8 +80,8 @@ async def bug(ctx):
 
 @client.command()
 async def b(ctx):
-    embed_b = discord.Embed(title="BOT PRO",
-                                   description="Recuerden que pueden utilizar el comando !help para ver todas las funcionalidades de nuestro bot :wink:",
+    embed_b = discord.Embed(title=":rocket: BOT PRO :rocket:",
+                                   description=":warning: Recuerden que pueden utilizar el comando **!help** para usar nuestro BOT de consultas básicas.:fire:",
                                    timestamp=datetime.datetime.utcnow())
     await ctx.send(embed=embed_b)
 
